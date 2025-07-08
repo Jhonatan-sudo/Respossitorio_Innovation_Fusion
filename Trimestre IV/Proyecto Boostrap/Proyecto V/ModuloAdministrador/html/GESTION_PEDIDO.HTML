@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/ModuloAdministrador/css/INVENTARIO.CSS">
+    <title>Inventario</title>
+</head>
+<body>
+    
+    <nav class="slidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="/ModuloAdministrador/img/logo.png" alt="logo">
+                </span>
+
+                <div class="text header-text">
+                    <span class="name">ADMINISTRADOR</span>
+                </div>
+            </div>
+
+            <i class="arrow toggle"><img src="/ModuloAdministrador/img/caret-right-fill.svg" alt=""></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav link">
+                        <a href="./INVENTARIO(PRINCIPAL).HTML"><img src="/ModuloAdministrador/img/bag-fill.svg" alt="">
+                        <span class="text nav-text">Inventario</span>
+                    </a>
+                    </li>
+
+                     <li class="nav link">
+                        <a href="./CONTROL_CONTENIDO.HTML"><img src="/ModuloAdministrador/img/card-heading.svg" alt="">
+                        <span class="text nav-text">Gestionar Pagina</span>
+                    </a>
+                    </li>
+
+                     <li class="nav link">
+                        <a href="./GESTION_USUARIOS.HTML"><img src="/ModuloAdministrador/img/person-rolodex.svg" alt="">
+                        <span class="text nav-text">Gestion Usuarios</span>
+                    </a>
+                    </li>
+
+                     <li class="nav link">
+                        <a href="./GESTION_PEDIDO.HTML"><img src="/ModuloAdministrador/img/box2-fill.svg" alt="">
+                        <span class="text nav-text">Gestion Pedidos</span>
+                    </a>
+                    </li>
+
+
+                     <li class="nav link">
+                        <a href="./CHAT.HTML"><img src="/ModuloAdministrador/img/chat-dots-fill.svg" alt="">
+                        <span class="text nav-text">Chat</span>
+                    </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="botton-content">
+                  <li class="nav link">
+                        <a href="#"><img class="door" src="/ModuloAdministrador/img/door-closed.svg" alt="">
+                        <span class="text nav-text">Cerrar sesion</span>
+                    </a>
+                    </li> 
+            </div>
+        </div>
+        
+    </nav> 
+
+<div class="main-content">
+
+    <div class="container py-4">
+
+        <div class="row border-bottom pb-2 mb-4">
+            <h1 class="text-center">Gestión Pedidos</h1>
+        </div>
+
+        <div class="row row-cols-md-2 g-4 mb-4">
+            <div class="col">
+                <button type="button" class="btn btn-outline-secondary w-100">Gestión Devoluciones</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-outline-secondary w-100">Gestión Cambios</button>
+            </div>
+        </div>
+
+        <div class="row row-cols-md-3 g-4 mb-4">
+            <div class="col">
+                <select name="estado_pedido" id="estado_pedido" class="form-select">
+                    <option value="">Seleccionar estado</option>
+                    <option value="Pendiente">Pendiente</option>
+                    <option value="En proceso">En proceso</option>
+                    <option value="Entregado">Entregado</option>
+                </select>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-primary w-100">Ver historial</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-success w-100">Agregar Manualmente</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+      <table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th scope="col">
+                <input type="checkbox" id="checkAll" />
+            </th>
+            <th>ID Pedido</th>
+            <th>Cliente</th>
+            <th>Estado</th>
+            <th>Fecha</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><input type="checkbox" class="check-item" /></td>
+            <td>001</td>
+            <td>Ana Torres</td>
+            <td>Pendiente</td>
+            <td>2025-06-13</td>
+            <td>
+                <button class="btn btn-sm btn-info">Ver</button>
+                <button class="btn btn-sm btn-warning">Editar</button>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" class="check-item" /></td>
+            <td>002</td>
+            <td>Pedro Gómez</td>
+            <td>En proceso</td>
+            <td>2025-06-12</td>
+            <td>
+                <button class="btn btn-sm btn-info">Ver</button>
+                <button class="btn btn-sm btn-warning">Editar</button>
+            </td>
+        </tr>
+        <!-- Puedes agregar más filas aquí -->
+    </tbody>
+</table>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="/ModuloAdministrador/js/script.js"></script>
+</body>
+</html>

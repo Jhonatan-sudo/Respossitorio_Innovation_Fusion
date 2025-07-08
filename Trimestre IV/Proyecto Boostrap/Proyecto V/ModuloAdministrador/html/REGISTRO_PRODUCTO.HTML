@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/ModuloAdministrador/css/INVENTARIO.CSS">
+    <title>Inventario</title>
+</head>
+<body>
+    
+    <nav class="slidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="/ModuloAdministrador/img/logo.png" alt="logo">
+                </span>
+
+                <div class="text header-text">
+                    <span class="name">ADMINISTRADOR</span>
+                </div>
+            </div>
+
+            <i class="arrow toggle"><img src="/ModuloAdministrador/img/caret-right-fill.svg" alt=""></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav link">
+                        <a href="./INVENTARIO(PRINCIPAL).HTML"><img src="/ModuloAdministrador/img/bag-fill.svg" alt="">
+                        <span class="text nav-text">Inventario</span>
+                    </a>
+                    </li>
+
+                     <li class="nav link">
+                        <a href="./CONTROL_CONTENIDO.HTML"><img src="/ModuloAdministrador/img/card-heading.svg" alt="">
+                        <span class="text nav-text">Gestionar Pagina</span>
+                    </a>
+                    </li>
+
+                     <li class="nav link">
+                        <a href="./GESTION_USUARIOS.HTML"><img src="/ModuloAdministrador/img/person-rolodex.svg" alt="">
+                        <span class="text nav-text">Gestion Usuarios</span>
+                    </a>
+                    </li>
+
+                     <li class="nav link">
+                        <a href="./GESTION_PEDIDO.HTML"><img src="/ModuloAdministrador/img/box2-fill.svg" alt="">
+                        <span class="text nav-text">Gestion Pedidos</span>
+                    </a>
+                    </li>
+
+
+                     <li class="nav link">
+                        <a href="./CHAT.HTML"><img src="/ModuloAdministrador/img/chat-dots-fill.svg" alt="">
+                        <span class="text nav-text">Chat</span>
+                    </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="botton-content">
+                  <li class="nav link">
+                        <a href="#"><img class="door" src="/ModuloAdministrador/img/door-closed.svg" alt="">
+                        <span class="text nav-text">Cerrar sesion</span>
+                    </a>
+                    </li> 
+            </div>
+        </div>
+    </nav>
+
+<div class="main-content">
+    <div class="header">    
+        <div class="row custom-header">
+            <div class="col-12 d-flex align-items-center justify-content-between px-4 w-100">
+                <h1 class="mb-0">Registro producto</h1>
+                <a href="./INVENTARIO(PRINCIPAL).HTML" class="btn btn-light custom-btn-exit">
+                    <img src="../img/caret-left.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>  
+
+    <form class="container py-4">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+            <div class="col">
+                <label class="form-label">Producto</label>
+                <select name="producto" id="producto" class="form-select">
+                    <option value="elegir">Elegir</option>
+                    <option value="zapatos">Zapatos</option>
+                    <option value="bolsos">Bolsos</option>
+                </select>
+            </div>
+
+            <div class="col">
+                <label class="form-label">Código del producto</label>
+                <input type="number" name="codigo" min="0" class="form-control">
+            </div>
+
+            <div class="col">
+                <label class="form-label">Nombre del producto</label>
+                <input type="text" name="nombre" class="form-control">
+            </div>
+
+            <div class="col">
+                <label class="form-label">Categoría</label>
+                <input type="text" name="categoria" class="form-control">
+            </div>
+
+            <div class="col">
+                <label class="form-label">SubCategoría</label>
+                <input type="text" name="subcategoria" class="form-control">
+            </div>
+
+            <div class="col">
+                <label class="form-label">Marca</label>
+                <input type="text" name="marca" class="form-control">
+            </div>
+
+            <div class="col">
+                <label class="form-label">Descripción</label>
+                <textarea class="form-control" name="descripcion"></textarea>
+            </div>
+
+            <div class="col">
+                <label class="form-label">Cantidad del producto</label>
+                <input type="number" name="cantidad" min="0" class="form-control">
+            </div>
+
+            <div class="col">
+                <label class="form-label">Precio de venta</label>
+                <input type="number" name="precioVenta" min="0" step="0.01" class="form-control">
+            </div>
+
+            <div class="col">
+                <label class="form-label">Precio interno</label>
+                <input type="number" name="precioInterno" min="0" step="0.01" class="form-control">
+            </div>
+
+            <div class="col">
+                <label class="form-label">Imagen del producto</label>
+                <input type="file" name="imagen" class="form-control">
+            </div>
+
+            <div class="col">
+                <label class="form-label">Fecha de ingreso</label>
+                <input type="date" name="fechaIngreso" class="form-control">
+            </div>
+
+            <div class="col">
+                <label class="form-label">Material</label>
+                <select name="material" id="material" class="form-select">
+                    <option value="">Selecciona material</option>
+                    <option value="cuero">Cuero</option>
+                    <option value="sintetico">Cuero sintético</option>
+                    <option value="tela">Tela</option>
+                </select>
+            </div>
+
+            <div class="col">
+                <label class="form-label">Género</label>
+                <select name="genero" id="gen" class="form-select">
+                    <option value="">Selecciona género</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+                        <div class="col">
+                <label class="form-label">Agregar nueva talla</label>
+                <input type="number" name="nuevaTalla" placeholder="Escribe un numero" class="form-control" min="0" max="50">
+                <button class="btn mt-3 custom-btn">Agregar Talla</button>
+            </div>
+
+            <div class="col">
+                <label class="form-label">Tallas de zapatos</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="t38">
+                    <label class="form-check-label">38</label>
+                    <input type="number" class="form-control" placeholder="Cantidad">
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="t39">
+                    <label class="form-check-label">39</label>
+                    <input type="number" class="form-control" placeholder="Cantidad">
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="t40">
+                    <label class="form-check-label">40</label>
+                    <input type="number" class="form-control" placeholder="Cantidad">
+                </div>
+            </div>
+
+            <div class="col">
+                <label class="form-label">Agregar nuevo color</label>
+                <input type="text" name="nuevoColor" placeholder="Escribe un color" class="form-control">
+                <button class="btn mt-3 custom-btn">Agregar color</button>
+            </div>
+
+            <div class="col">
+                <label class="form-label">Colores</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="azul">
+                    <label class="form-check-label">Azul</label>
+                    <input type="number" class="form-control" placeholder="Cantidad">
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="negro">
+                    <label class="form-check-label">Negro</label>
+                    <input type="number" class="form-control" placeholder="Cantidad">
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="blanco">
+                    <label class="form-check-label">Blanco</label>
+                    <input type="number" class="form-control" placeholder="Cantidad">
+                </div>
+            </div>
+
+            <div class="col">
+                <label class="form-label">Proveedor</label>
+                <input type="text" name="nombre" class="form-control">
+            </div>
+            </div>
+
+<div class="row row-cols-1">
+            <div class="col-12 text-center">
+                <button type="submit" class="btn mt-3 custom-btn">Guardar producto</button>
+                <button type="submit" class="btn mt-3 custom-btn-1">Vaciar Campos</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<script src="/ModuloAdministrador/js/script.js"></script>
+<script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/ModuloAdministrador/css/INVENTARIO.CSS">
+    <title>Inventario</title>
+</head>
+<body>
+    
+    <nav class="slidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="/ModuloAdministrador/img/logo.png" alt="logo">
+                </span>
+
+                <div class="text header-text">
+                    <span class="name">ADMINISTRADOR</span>
+                </div>
+            </div>
+
+            <i class="arrow toggle"><img src="/ModuloAdministrador/img/caret-right-fill.svg" alt=""></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav link">
+                        <a href="./INVENTARIO(PRINCIPAL).HTML"><img src="/ModuloAdministrador/img/bag-fill.svg" alt="">
+                        <span class="text nav-text">Inventario</span>
+                    </a>
+                    </li>
+
+                     <li class="nav link">
+                        <a href="./CONTROL_CONTENIDO.HTML"><img src="/ModuloAdministrador/img/card-heading.svg" alt="">
+                        <span class="text nav-text">Gestionar Pagina</span>
+                    </a>
+                    </li>
+
+                     <li class="nav link">
+                        <a href="./GESTION_USUARIOS.HTML"><img src="/ModuloAdministrador/img/person-rolodex.svg" alt="">
+                        <span class="text nav-text">Gestion Usuarios</span>
+                    </a>
+                    </li>
+
+                     <li class="nav link">
+                        <a href="./GESTION_PEDIDO.HTML"><img src="/ModuloAdministrador/img/box2-fill.svg" alt="">
+                        <span class="text nav-text">Gestion Pedidos</span>
+                    </a>
+                    </li>
+
+
+                     <li class="nav link">
+                        <a href="./CHAT.HTML"><img src="/ModuloAdministrador/img/chat-dots-fill.svg" alt="">
+                        <span class="text nav-text">Chat</span>
+                    </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="botton-content">
+                  <li class="nav link">
+                        <a href="#"><img class="door" src="/ModuloAdministrador/img/door-closed.svg" alt="">
+                        <span class="text nav-text">Cerrar sesion</span>
+                    </a>
+                    </li> 
+            </div>
+        </div>
+        
+    </nav> 
+
+<div class="main-content">
+   
+    <div class="row border-bottom p-2 border-1 border-dark">
+        <h1 class="d-flex justify-content-center ">Gestion usuarios</h1>
+    </div>
+
+    <div class="row row-cols-md-2 d-flex justify-content-between">
+        <div class="col">
+            <h2 class="fs-5">Estado</h2>
+            <select name="estado" id="estado_user" class="form-select">
+                <option value=""no option>Seleccioner estado</option>
+                <option value="Activo">Activo</option>
+                <option value="Inactivo">Inactivo</option>
+            </select>
+        </div>
+        <div class="col">
+            <h2 class="fs-5">Cambiar rol</h2>
+            <select name="estado" id="estado_user" class="form-select">
+                <option value=""no option>Seleccioner rol</option>
+                <option value="Activo">Usuario</option>
+                <option value="Inactivo">Administrador</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="row">
+        <table>
+            <thead>
+                <th>Seleccion</th>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Rol</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input class="form-check-input" type="checkbox" id="user"></td>
+                    <td>1234</td>
+                    <td>Pablo Moto</td>
+                    <td>Administrador</td>
+                    <td><p class="text-success">Activo</p></td>
+                    <td>
+                        <div class="row row-cols-md-3">
+                            <div class="col">
+                                <button type="submit" class="btn custom-btn">Ver</button>
+                            </div>
+                            <div class="col">
+                            <button type="submit" class="btn custom-btn">Editar</button>
+                            </div>
+                            <div class="col">
+                                <button type="submit" class="btn custom-btn-1">eliminar</button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+
+
+</div>
+
+<script src="/ModuloAdministrador/js/script.js"></script>
+</body>
+</html>

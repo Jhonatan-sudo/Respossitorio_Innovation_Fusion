@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/ModuloAdministrador/css/INVENTARIO.CSS">
+    <title>Inventario</title>
+</head>
+<body>
+    
+    <nav class="slidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="/ModuloAdministrador/img/logo.png" alt="logo">
+                </span>
+
+                <div class="text header-text">
+                    <span class="name">ADMINISTRADOR</span>
+                </div>
+            </div>
+
+            <i class="arrow toggle"><img src="/ModuloAdministrador/img/caret-right-fill.svg" alt=""></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav link">
+                        <a href="./INVENTARIO(PRINCIPAL).HTML"><img src="/ModuloAdministrador/img/bag-fill.svg" alt="">
+                        <span class="text nav-text">Inventario</span>
+                    </a>
+                    </li>
+
+                     <li class="nav link">
+                        <a href="./CONTROL_CONTENIDO.HTML"><img src="/ModuloAdministrador/img/card-heading.svg" alt="">
+                        <span class="text nav-text">Gestionar Pagina</span>
+                    </a>
+                    </li>
+
+                     <li class="nav link">
+                        <a href="./GESTION_USUARIOS.HTML"><img src="/ModuloAdministrador/img/person-rolodex.svg" alt="">
+                        <span class="text nav-text">Gestion Usuarios</span>
+                    </a>
+                    </li>
+
+                     <li class="nav link">
+                        <a href="./GESTION_PEDIDO.HTML"><img src="/ModuloAdministrador/img/box2-fill.svg" alt="">
+                        <span class="text nav-text">Gestion Pedidos</span>
+                    </a>
+                    </li>
+
+
+                     <li class="nav link">
+                        <a href="./CHAT.HTML"><img src="/ModuloAdministrador/img/chat-dots-fill.svg" alt="">
+                        <span class="text nav-text">Chat</span>
+                    </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="botton-content">
+                  <li class="nav link">
+                        <a href="#"><img class="door" src="/ModuloAdministrador/img/door-closed.svg" alt="">
+                        <span class="text nav-text">Cerrar sesion</span>
+                    </a>
+                    </li> 
+            </div>
+        </div>
+        
+    </nav> 
+
+<div class="main-content">
+    
+    <div class="header">    
+        <div class="row custom-header">
+            <div class="col-12 d-flex align-items-center justify-content-between px-4 w-100">
+                <h1 class="mb-0">INVENTARIO</h1>
+                <a href="./REGISTRO_PRODUCTO.HTML" class="btn custom-btn btn-light">Registrar producto</a>
+            </div>
+        </div>
+    </div>      
+        <div class="row">
+            <div class="col">
+                <table>
+                    <thead>
+                        <tr>
+                        <th>Código</th>
+                        <th>Nombre</th>
+                        <th>Categoría</th>
+                        <th>Subcategoría</th>
+                        <th>Descripción</th>
+                        <th>Cantidad</th>
+                        <th>Precio de Venta</th>
+                        <th>Precio Interno</th>
+                        <th>Imagen</th>
+                        <th>Proveedor</th>
+                        <th>Marca</th>
+                        <th>Fecha de Ingreso</th>
+                        <th>Color Disponible</th>
+                        <th>Material</th>
+                        <th>Género</th>
+                        <th>Acciones</th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                            <tr>
+                            <td>12345</td>
+                            <td>Zapato deportivos</td>
+                            <td>Zapatos</td>
+                            <td>Deportivo</td>
+                            <td>Zapato ideal para correr</td>
+                            <td>100</td>
+                            <td>$50.000</td>
+                            <td>$30.000</td>
+                            <td><img src="./img/zapatos.jpg" alt="Zapato Deportivo X" width="50"></td>
+                            <td>Proveedor A</td>
+                            <td>Marca X</td>
+                            <td>2025-04-06</td>
+                            <td>Rojo, Azul</td>
+                            <td>Cuero</td>
+                            <td>Unisex</td>
+                            <td><a href="./REGISTRO_PRODUCTO.HTML" id="boton_agregar" class="btn btn-light">Editar</a><a href="#" id="boton_eliminar" class="btn btn-light">Eliminar</a></td>
+                            </tr>
+                            <tr>
+                            <td>67890</td>
+                            <td>Bolso de Mano Elegante</td>
+                            <td>Bolsos</td>
+                            <td>De Mano</td>
+                            <td>Bolso elegante para uso diario</td>
+                            <td>50</td>
+                            <td>$80.000</td>
+                            <td>$60.000</td>
+                            <td><img src="./img/bolso.jpg" alt="Bolso Elegante" width="50"></td>
+                            <td>Proveedor B</td>
+                            <td>Marca Y</td>
+                            <td>2025-04-05</td>
+                            <td>Negro, Beige</td>
+                            <td>Tela</td>
+                            <td>Femenino</td>
+                            <td><a href="./REGISTRO_PRODUCTO.HTML" id="boton_agregar" class="btn btn-light">Editar</a><a href="#" id="boton_eliminar" class="btn btn-light">Eliminar</a></td>
+                            </tr>
+                            
+                            <!-- Más productos -->
+                        </tbody>
+                </table>
+            </div>
+        </div>
+</div>
+
+<script src="/ModuloAdministrador/js/script.js"></script>
+</body>
+</html>
